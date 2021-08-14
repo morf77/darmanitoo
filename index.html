@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test-page-home.css">
+    <title>darmnito</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <a class="menue-open mobile show" href="#" onclick="myFunction()"><img src="img/24 - basic - menu.svg" alt="menu"></a>
+        <a class="mobile d-none show" href="#" onclick="myFunction()"><img src="img/close.svg" alt=""></a>
+        <div class="download-btn add-remove show">
+            <a  href="#download">
+                <button class="btn-secondary">دانلود درماتینو</button>
+            </a>
+        </div>
+        <div class="menue add-remove show">
+            <ul>
+                <li><a class="active" href="index.html.html">صفحه اصلی</a></li>
+                <li><a href="questions.html">عضویت داروخانه ها</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li class="mobile"><a href="#">سوالات متداول</a></li>
+                <li class="mobile"><a href="#">قوانین و شرایط</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+          <div>
+              <h4>درماتینو</h4>
+              <p>همراه شما در درمان</p> 
+          </div>
+          <img src="img/logo.svg" alt="logo">
+        </div>
+    </nav>
+
+    <script>
+        function myFunction() {
+            var elements = document.getElementsByClassName("show");
+            for(let i=0; i<elements.length ; i++){
+                elements[i].classList.toggle('d-none')
+            }
+            
+        }
+        function mediafunction(){
+            var elements=document.getElementsByClassName("add-remove");
+            var element=elements[0];
+            var elementPlus=elements[1]
+            if (x.matches) { // If media query matches
+                element.classList.toggle("d-none")
+                elementPlus.classList.toggle("d-none")
+            } else {
+                element.classList.remove("d-none");
+                elementPlus.classList.remove("d-none")
+            }
+            var navigation = document.getElementById("navbar");
+            navigation.classList.toggle("Row5")
+        }
+            var x = window.matchMedia("(max-width: 950px)")
+            mediafunction(x) // Call listener function at run time
+            x.addListener(mediafunction) // Attach listener function on state change
+        
+    </script>
+
+    <!-- home part -->
+    <section id="home">
+        <div class="doctor-picture"><img src="img/doctor.svg" alt="doc"></div>
+        <div class="home-text">
+            <h1>اپلیکیشن درماتینو</h1>
+            <p>درماتینو سامانه هوشمند سلامت</p>
+            <div>
+                <button class="btn-primary"><a href="#">دانلود درماتینو</a></button>
+                <button class="btn-light"><a href="#">عضویت داروخانه</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- about part -->
+    <section  id="about">
+        <div class="about-text">
+            <h2>درباره درماتینو</h2>
+            <p>درماتینو یک سامانه است که امکان سفارش دارو، محصولات ارایشی بهداشتی، نوبت گیری و مشاوره پزشکان را به راحتی و به صورت انلاین فراهم کرده است</p>
+            <div class="about-icons">
+                <div class="icon">
+                    <img src="img/search.svg" alt="fast search">
+                    <p>جستجوی سریع</p>
+                </div>
+                <div class="icon">
+                    <img src="img/time.svg" alt="time">             
+                    <p>به صرفه</p>
+                </div>
+                <div class="icon">
+                    <img src="img/support.svg" alt="support">                     
+                    <p>راحت</p>
+                </div>
+                <div class="icon">
+                    <img src="img/verify.svg" alt="verify">                    
+                    <p>جستجو سریع</p>
+                </div>
+            </div>
+        </div>
+        <div class="app">
+            <img src="img/app-preview.svg" alt="app">
+        </div>
+        <div class="text-mobile">
+            <h2>درماتینو چیست</h2>
+            <p>درمانیتو یک سوپر اپلیکیشن است که سعی داره با سرویس های متفاوتش روند درمان شمارو تسریع کنه
+                ؛ شما با درمانیتو میتونید نسخه خودتون رو برای تمام داروخانه های اطرافتون بفرستید
+            </p>
+        </div>
+    </section>
+    <!-- facilities part -->
+    <section id="facilities">
+        <h2 class="facilities-web-title">امکانات درمانیتو</h2>
+        <h2 class="facilities-mobile-title">سرویس های درماتینو</h2>
+        <div class="facilities-grid">
+            <div class="facilities-img-part">
+              <div class="gray">
+                <img src="img/shop.svg" alt="shop">
+                  <p>فروشگاه</p>
+              </div>
+              <div class="bordered">
+                <img src="img/pharmacy.svg" alt="pharmacy">
+                <p>داروخانه</p>
+              </div>
+              <div class="gray">
+                <img src="img/calender.svg" alt="calender">
+                <p>نوبت دهی انلاین</p>
+              </div>
+              <div class="gray"> 
+                <img src="img/doctor-toys.svg" alt="toys">
+                <p>ویزیت آنلاین</p>
+              </div>
+            </div>
+            <div class="facilities-text">
+                <h3>داروخانه انلاین</h3>
+                <p>در سرویس داروخانه شما می توانید نسخه دارویی با محصول بهداشتی رو برای پیدا شدن به داروخانه و فروشگاه سفارش بدید</p>
+                <div class="holder">
+                  <div class="text-holder">
+                    <div>
+                      <h4>قدم اول</h4>
+                      <p>وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید</p>
+                    </div>
+                    <div>
+                      <h4>قدم دوم</h4>
+                      <p>بعد از ارسال عکس نسخه، باید ادرس محل خودتون رو وارد کنید</p>
+                    </div>
+                    <div>
+                      <h4>قدم سوم</h4>
+                      <p>اگر نتیجه جستجوی نسخه موفقیت آمیز باشد باید منتظر تحویل سفارش باشید</p>
+                    </div>
+                  </div>
+                  <div class="img-holder">
+                    <img src="img/arrow.svg" class="first-arroy" alt="arrow">
+                    <img src="img/Path 1.svg" class="line-img" alt="path">
+                    <img src="img/arrow.svg" class="second img" alt="arrow">
+                    <img src="img/icon.svg" class="tick" alt="tick">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- download part -->
+    <section id="download">
+        <div class="img-part">
+            <img src="img/app-preview.svg" alt="prewiew">
+        </div>
+        <div class="text-part">
+            <h2>دانلود اپلیکیشن درمانیتو</h2>
+            <p>برای دریافت لینک دانلود، شماره موبایل خود را وارد نمایید</p>
+            <form action="#">
+                <button>بفرست</button>
+                <input type="text" name="phone-number" id="phone" value="0912 61 36 900شماره همراه را وارد کنید">
+            </form>
+            <div>
+              <a href="#">
+                  <img class="link-web-android" src="img/android.svg" alt="android">
+              </a>
+              <a href="#">
+                  <img src="img/bazar.svg" alt="bazar">
+              </a>
+              <a href="#" class="last-a">
+                  <img src="img/sibapp.svg" alt="sibap">
+              </a>
+          </div>
+        </div>
+    </section>
+    <!-- membership -->
+    <section id="membership">
+        <div class="container">
+          <div class="img-part">
+            <img src="img/subscribe-img.svg" alt="subscribe-img">
+          </div>
+          <div class="text-part">
+              <h2>عضویت داروخانه یا مرکز درمانی</h2>
+              <p>اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب و کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست</p>
+              <div>
+                  <button class="btn-primary">ثبت نام سریع</button>
+                  <p class="inline membership-web-text">0912 61 36 900</p>
+                  <p class="inline">شماره همراه را وارد کنید</p>
+              </div>
+          </div>
+          
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="first-part">
+            <a href="#">
+              <img src="img/support-phone-number.svg" alt="support">
+            </a>
+            <p>پاسخ گویی در روز های کاری از ۹ صبح تا ۹ شب</p>              
+            <h3>پشتیبانی درمانیتو</h3>
+        </div>
+        <div class="second-part">
+            <div class="info">
+                <div class="logo">
+                    <div>
+                      <h4>درماتینو</h4>
+                      <p>همراه شما در درمان</p> 
+                    </div>
+                    <img src="img/logo.svg" alt="logo"> 
+                </div>
+                <div class="supper-app">
+                    <h4>سوپر اپلیکیشن حوزه درمان و سلامت</h4>
+                    <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                </div>
+                <div class="apps">
+                    <img src="img/instagram.svg" alt="instagram">
+                    <img src="img/twitter.svg" alt="twitter">
+                    <img src="img/linkedin.svg" alt="linkedin">
+                </div>
+            </div>
+            <div class="services web-footer">
+                <h4>خدمات درمانیتو</h4>
+                <a href="#" class="high-light">داروخانه انلاین</a>
+                <a href="#">فروشگاه انلاین</a>
+                <a href="#">ویزیت انلاین</a>
+                <a href="#">پرونده پزشکی</a>
+            </div>
+            <div class="contact-us web-footer">
+                <h4>صفحات درمانیتو</h4>
+                <a href="#">تماس با ما</a>
+                <a href="#">درباره ما</a>
+                <a href="#">سوالات متداول</a>
+                <a href="#">قوانین و شرایط</a>
+            </div>
+            <div class="download-app web-footer">
+                <h4>دانلود درمانیتو</h4>
+                <div>
+                    <a href="#">
+                      <img src="img/sib-app-black.svg" alt="sibb app">
+                    </a>
+                    <a href="#">
+                      <img src="img/black-bazar.svg" alt="bazar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
