@@ -264,7 +264,7 @@ footer {margin-top: 20vh;}
     justify-content: space-between;
     padding:0 10vw;
 }
-.about__text{width:45vw;padding-top:2rem}
+.about__text{width:40vw;padding-top:2rem}
 .about__text>p {
     margin-bottom: 7vw;
     margin-right: 0;
@@ -283,7 +283,7 @@ footer {margin-top: 20vh;}
 .about__icons {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 2.5vw;
+    grid-column-gap: 1vw;
 }
 .about__icon {
     display: grid;
