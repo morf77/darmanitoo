@@ -13,7 +13,7 @@
         <a class="navbar__menue-open --mobile --show" href="#" onclick="myFunction()"><img src="img/24 - basic - menu.svg" alt="menu"></a>
         <a class="navbar__menue-close --mobile --d-none --show" href="#" onclick="myFunction()"><img src="img/close.svg" alt=""></a>
         <div class="navbar__btn --add-remove --show">
-            <a href="#download">
+            <a>
                 <button class="--bg-light --text-primary">دانلود درماتینو</button>
             </a>
         </div>
@@ -39,11 +39,14 @@
     
 
     <!--------------------------------------- home part ------------------------------------------->
-    <section class="home">
-        <div class="home__picture"><img src="img/doctor.svg" alt="doc"></div>
+    <header class="home">
+        <div class="home__picture">
+            <img class="--add-remove" src="img/doctor.svg" alt="doctor">
+            <img class="--mobile" src="img/doctor_two_color.svg" alt="doctor">
+        </div>
         <div class="home__text">
             <h1>اپلیکیشن درماتینو</h1>
-            <p class="--add-remove">درماتینو سامانه هوشمند سلامت</p>
+            <p class="--add-remove --my-2">درماتینو سامانه هوشمند سلامت</p>
             <p class="--mobile --font-14">سوپر اپلیکیشن حوزه درمان و سلامت</p>
             <div>
                 <button class="--bg-primary ">
@@ -53,7 +56,7 @@
                 <button class="--bg-waite --border-solid --border-s --border-primary"><a class="--text-primary" href="#">عضویت داروخانه</a></button>
             </div>
         </div>
-    </section>
+    </header>
 
 
 
@@ -109,15 +112,15 @@
               </div>
               <div class="--bordered">
                 <img src="img/pharmacy.svg" alt="pharmacy">
-                <p>داروخانه</p>
+                <p class="--m-0">داروخانه</p>
               </div>
-              <div class="--gray">
+              <div class="--gray  --add-remove">
                 <img src="img/calender.svg" alt="calender">
-                <p>نوبت دهی انلاین</p>
+                <p class="--m-0">نوبت دهی انلاین</p>
               </div>
-              <div class="--gray"> 
+              <div class="--gray ">
                 <img src="img/doctor-toys.svg" alt="toys">
-                <p>ویزیت آنلاین</p>
+                <p class="--m-0">ویزیت آنلاین</p>
               </div>
             </div>
             <div class="facilities__text">
@@ -192,7 +195,8 @@
             <img src="img/subscribe-img.svg" alt="subscribe-img">
           </div>
           <div class="membership__text">
-              <h2>عضویت داروخانه یا مرکز درمانی</h2>
+              <h2 class="--add-remove">عضویت داروخانه یا مرکز درمانی</h2>
+              <h2 class="--mobile">من داروخانه یا مرکز درمانی هستم</h2>
               <p>اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب و کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست</p>
               <div class="membership__submit">
                   <button class="--bg-primary --text-waite">ثبت نام سریع</button>
