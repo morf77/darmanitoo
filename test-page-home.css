@@ -115,19 +115,6 @@ footer {margin-top: 20vh;}
 .--circle{border-radius: 100%;}
 .--border-primary{border-color: var(--primary-color);}
 
-.btn-light{
-    background-color:#f3f3f3;
-    color: rgb(92, 149, 255);
-}
-.btn-primary{
-    background-color: #1894ff;
-    color:#f3f3f3;
-}
-.btn-secondary{
-    background-color: #E6F3FF;
-    color: #1894ff;
-}
-
 .--my-2{margin-top: 2rem;margin-bottom: 2rem;}
 .--m-0{margin:0}
 
