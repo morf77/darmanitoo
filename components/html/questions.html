@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="contact-us.css">
-        <title>contact-us</title>
+        <link rel="stylesheet" href="../../assests/css/questions.css">
+        <title>questions</title>
     </head>
     <body>
         <!--------------------------------------- navbar ------------------------------>
@@ -35,44 +35,40 @@
             <img src="img/logo.svg" alt="logo">
             </div>
         </nav>
-        <!------------ title ---------->
-        <h1 class="title">تماس با ما</h1>
-        <!----------- form section ------->
-        <section class="contact">
-            <div class="contact__picture">
-                <div class="contact__container">
-                    <div class="contact__adress">
-                        <p>ادرس</p>
-                        <p>تهران،طرشت،خیابان چوب تراش،خیابان شهید حسین مردی،بنبست پنجم،پلاک۱۵،واحد۱</p>
+        <!------------------------------------------ title ----------------------------------------->
+        <h1 class="title">سوالات متداول</h1>
+        <!------------------------------------------ section-------------------------------------- -->
+        <section class="section">
+            <div class="section__container">
+                <h2>سوالات شما درباره کدام سرویس است؟</h2>
+                <div class="section__picture">
+                    <div class="--gray --add-remove">
+                        <p class="section--bgblue">به زودی</p>
+                        <img src="img/calender.svg" alt="calender">
+                        <p>نوبت دهی انلاین</p>                      
                     </div>
-                    <div class="contact__emailphone">
-                        <div>
-                            <p>ایمیل</p>
-                            <p class="--text-primary">info@nahiratech.com</p>
-                        </div>
-                        <div>
-                            <p>شماره ثابت</p>
-                            <p class="--text-primary">۰۲۱-۴۴۲۱۹۶۷۱</p>
-                        </div>
-                        
+                    <div class="--gray">
+                        <p class="section--bgblue">به زودی</p>
+                        <img src="img/doctor-toys.svg" alt="toys">
+                        <p>ویزیت آنلاین</p>
+                  </div>
+                    <div class="--gray">
+                        <img src="img/shop.svg" alt="shop">
+                        <p>فروشگاه</p>
                     </div>
-                </div>
+                    <div class="--bordered">
+                        <img src="img/pharmacy.svg" alt="pharmacy">
+                        <p>داروخانه</p>
+                    </div>
+                </div>             
             </div>
-            <div class="contact__text">
-                <form action="#">
-                    <p>نام و نام خانوادگی</p>
-                    <input type="text" name="firstAndLastName" id="name" placeholder="ایمیل یا شماره همراه">
-                    <p>ایمیل یا شماره همراه</p>
-                    <input type="text" name="emailOrNember" id="email-number" placeholder="ایمیل یا شماره همراه">
-                    <p>پیام شما</p>
-                    <input type="text" name="massege" id="massege" placeholder="ایمیل یا شماره همراه">
-                    <input type="submit" value="ارسال پیام">
-                    </form>
-            </div>
+            <p>هزینه ای درمانیتو برای پیدا کردن دارو دریافت می کند؟<img src="img/plus.svg" alt="+"></p>
+            <p> هزینه ای درمانیتو برای پیدا کردن دارو دریافت می کند؟<img src="img/plus.svg" alt="+"></p>
+            <p class="section--minus">درمانیتو فقط در تهران و کرج فعال است؟<img src="img/minus.svg" alt="-"></p>
+            <p class="section--answer">خیر ما هم اکنون در تهران در حال فعالیت هستیم</p>
+            <p class="--add-remove">هزینه ای درمانیتو برای پیدا کردن دارو دریافت می کند؟<img src="img/plus.svg" alt="+"> </p>
         </section>
-
-
-        <!------------------------------------------ footer -------------------------------------->
+        <!-- --------------------------------------------footer----------------------------------------------------- -->
         <footer class="footer">
             <div class="footer__firstsec">
                 <a href="#">
@@ -139,7 +135,7 @@
                 navigation[0].classList.toggle("--Row5")
             }
     
-            // cheker for mobile
+    
             function mediafunction(){
                 var elements=document.getElementsByClassName("--add-remove");
                 if (x.matches){
@@ -152,13 +148,15 @@
                     }
                 }
     
-                
+                var navigation = document.getElementsByClassName("navbar");
+                navigation[0].classList.remove("--Row5")
             }
                 var x = window.matchMedia("(max-width: 800px)")
                 mediafunction(x) // Call listener function at run time
                 x.addListener(mediafunction) // Attach listener function on state change
+            
 
-            // cheker for web
+                // cheker for web
             function mediacheker(){
                 var open=document.getElementsByClassName("navbar__menue-open")
                 var close=document.getElementsByClassName("navbar__menue-close")
@@ -172,7 +170,6 @@
                 var y = window.matchMedia("(min-width:800px)")
                 mediacheker(y)
                 y.addListener(mediacheker)
-            
         </script>
     </body>
 </html>
