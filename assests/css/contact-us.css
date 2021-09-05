@@ -235,7 +235,7 @@ footer {margin-top: 20vh;}
     justify-content: space-around;
 }
 .contact__picture {
-    background:url("img/Map.svg") no-repeat center center/cover;
+    background:url("../../assests/img/Map.svg") no-repeat center center/cover;
     display: flex;
     width:40vw;
 }
