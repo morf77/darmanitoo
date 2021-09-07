@@ -46,14 +46,14 @@
         </div>
         <div class="home__text">
             <h1>اپلیکیشن درماتینو</h1>
-            <p class="--add-remove --my-2">درماتینو سامانه هوشمند سلامت</p>
-            <p class="--mobile --font-14">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+            <p class="home__p --add-remove --my-2">درماتینو سامانه هوشمند سلامت</p>
+            <p class="home__p --mobile --font-14">سوپر اپلیکیشن حوزه درمان و سلامت</p>
             <div>
                 <button class="--bg-primary ">
-                    <a class="--text-waite --add-remove" href="#">دانلود درماتینو</a>
-                    <a class="--text-waite --mobile">دانلود مستقیم اپ</a>
+                    <p class="--text-waite --add-remove">دانلود درماتینو</p>
+                    <p class="--text-waite --mobile">دانلود مستقیم اپ</p>
                 </button>
-                <button class="--bg-waite --border-solid --border-s --border-primary"><a class="--text-primary" href="#">عضویت داروخانه</a></button>
+                <button class="--bg-waite --border-solid --border-s --border-primary"><p class="--text-primary">عضویت داروخانه</p></button>
             </div>
         </div>
     </header>
@@ -68,19 +68,27 @@
             <p>درماتینو یک سامانه است که امکان سفارش دارو، محصولات ارایشی بهداشتی، نوبت گیری و مشاوره پزشکان را به راحتی و به صورت انلاین فراهم کرده است</p>
             <div class="about__icons">
                 <div class="about__icon">
-                    <img src="../../assests/img/search.svg" alt="fast search">
-                    <p>جستجوی سریع</p>
+                    <div>
+                        <img src="../../assests/img/search.svg" alt="fast search">
+                    </div>
+                    <p>جستجو سریع</p>
                 </div>
                 <div class="about__icon">
-                    <img src="../../assests/img/time.svg" alt="time">             
+                    <div>
+                        <img src="../../assests/img/time.svg" alt="time">             
+                    </div>
                     <p>به صرفه</p>
                 </div>
                 <div class="about__icon">
-                    <img src="../../assests/img/support.svg" alt="support">                     
+                    <div>
+                        <img src="../../assests/img/support.svg" alt="support">                     
+                    </div>
                     <p>راحت</p>
                 </div>
                 <div class="about__icon">
-                    <img src="../../assests/img/verify.svg" alt="verify">                    
+                    <div>
+                        <img src="../../assests/img/verify.svg" alt="verify">                    
+                    </div>
                     <p>جستجو سریع</p>
                 </div>
             </div>
@@ -125,7 +133,8 @@
             </div>
             <div class="facilities__text">
                 <h3>داروخانه انلاین</h3>
-                <p>در سرویس داروخانه شما می توانید نسخه دارویی با محصول بهداشتی رو برای پیدا شدن به داروخانه و فروشگاه سفارش بدید</p>
+                <p class="--add-remove">در سرویس داروخانه شما می توانید نسخه دارویی با محصول بهداشتی رو برای پیدا شدن به داروخانه و فروشگاه سفارش بدید</p>
+                <p class="--mobile">شما با درمانیتو می تونید نسخه و دارو خودتون رو اول برای تمام داروخانه های اطراف خودتون و اگر پیدا نشد در تمام داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود</p>
                 <div class="facilities__holder">
                   <div class="facilities__steps">
                     <div>
@@ -170,15 +179,15 @@
                 <input type="text" name="phone-number" id="phone" value="0912 61 36 900شماره همراه را وارد کنید">
             </form>
             <div class="download__apps">
-              <a href="#">
+              <button class="--bg-secondary --add-remove">
                   <img class="--add-remove" src="../../assests/img/android.svg" alt="android">
-              </a>
-              <a href="#">
+              </button>
+              <button class="--bg-secondary">
                   <img src="../../assests/img/bazar.svg" alt="bazar">
-              </a>
-              <a href="#" class="last-a">
+              </button>
+              <button class="last-a --bg-secondary">
                   <img src="../../assests/img/sibapp.svg" alt="sibap">
-              </a>
+              </button>
           </div>
         </div>
     </section>
@@ -218,11 +227,13 @@
     <!------------------------------------------------- footer------------------------------------------>
     <footer class="footer">
         <div class="footer__firstsec">
-            <a href="#">
-              <img src="../../assests/img/support-phone-number.svg" alt="support">
-            </a>
-            <p class="--text-waite">پاسخ گویی در روز های کاری از ۹ صبح تا ۹ شب</p>              
-            <h3 class="--text-waite">پشتیبانی درمانیتو</h3>
+            <button class="footer__support --bg-secondary">
+              <img src="../../assests/img/Group 5522.svg" alt="support">
+              <p class="--text-waite">:پشتیبانی</p>
+              <p class="--text-waite"> ۰۲۱-۴۴۲۱۹۶۷۱</p>
+            </button>
+            <p class="--text-waite footer__topText">پاسخ گویی در روز های کاری از ۹ صبح تا ۹ شب</p>              
+            <h2 class="--text-waite">پشتیبانی درمانیتو</h2>
         </div>
         <div class="footer__secondsec">
             <div class="footer__info">
@@ -260,8 +271,8 @@
             <div class="footer__download --add-remove">
                 <h4>دانلود درمانیتو</h4>
                 <div>
-                    <img src="../../assests/img/sib-app-black.svg" alt="sibb app">
-                    <img src="../../assests/img/black-bazar.svg" alt="bazar">
+                    <button><img src="../../assests/img/sib-app-black.svg" alt="sibb app"></button>
+                    <button><img src="../../assests/img/black-bazar.svg" alt="bazar"></button>
                 </div>
             </div>
         </div>
