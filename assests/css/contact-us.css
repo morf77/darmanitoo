@@ -279,20 +279,20 @@ footer {margin-top: 20vh;}
 .contact__picture {
     background:url("../../assests/img/Map.svg") no-repeat center center/cover;
     display: flex;
-    width:40vw;
+    width:54%;
 }
 .contact__container {
-    background-color: #ffffff;
+    background-color:var(--my-white);
     align-self: flex-end;
     margin:2rem 4vw;
     display: flex;
     padding: 1vw;
 }
-.contact__container div{width:50%}
+.contact__adress , .contact__emailphone{width:50%}
 .contact__text form{
     padding:0 2vw;
 }
-.contact__text{width:40vw}
+.contact__text{width:39%}
 .contact__text form input{
     width:100%;
     height:3rem;
@@ -316,6 +316,7 @@ footer {margin-top: 20vh;}
     text-align: center;
     font-weight:bold;
     font-size: 18px;
+    background-color: var(--my-white);
 }
 @media (max-width:750px){
     .contact{flex-direction: column;align-items: center;}
