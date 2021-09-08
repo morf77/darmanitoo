@@ -703,6 +703,14 @@ img[alt="tick"]{
     .download__apps button{margin-top: 2rem;width:180px;}
     .download__apps img{width:180px;}
 }
+@media(max-width:670px){
+    .download__text form input[type="text"]{margin-right: 15vw;}
+
+}
+@media(max-width:640px){
+    .download__text form input[type="text"]{margin-right: 10vw;}
+
+}
 @media(max-width:560px){
     .download{height:200vw}
     .download__text h2,.download__text p{align-self: flex-end;}
