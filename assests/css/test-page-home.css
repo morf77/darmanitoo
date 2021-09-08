@@ -441,11 +441,13 @@ footer {margin-top: 20vh;}
     box-shadow:0 0 20px #1893ff31;
     border-radius: 20%;
 }
+.--bordered img{width:70px}
 
 .--gray{
     filter:grayscale(100%);
     opacity: 0.5;
 }
+.--gray img{width:50px}
 .facilities__picture div p {
     text-align: center;
 }
@@ -481,7 +483,11 @@ footer {margin-top: 20vh;}
     font-size: 14px;
 }
 @media screen and (max-width:1120px){
-    .facilities__picture div{width:120px;height:120px}
+    .facilities__picture div{width:120px;height:120px;padding:15px 0;}
+    .--bordered img{width:60px}
+    .--gray img{width:40px}
+
+
 
     .facilities__holder {
         margin-top:0;
