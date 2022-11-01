@@ -43,6 +43,7 @@
     text-align: right;
     color: var(--text-color);
     font-family: "yekan";
+    outline: none;
 }
 body{
     background-color: var(--my-white);
